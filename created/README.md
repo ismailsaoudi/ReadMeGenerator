@@ -1,27 +1,8 @@
-// function to generate markdown for README
-// "MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"
-
-function renderLicenseBadge(license) {
-  if(license==="Apache"){
-    return '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
-  }
-  else if(license==="MIT"){
-    return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
-  }
-  else if (license==="GPL 3.0"){ 
-    return '[![License: GPL (https://img.shields.io/badge/license-GPL-blue.svg)](https://opensource.org/licenses/GPL-3.0)'
-  }
-  else if (license === "None") {
-    return []
-  }
-}
-
-function generateMarkdown(data) {
-  return `# ${data.title}
+# 
 
   ## Description
   
-  ${data.description} 
+   
   
   ## Table of Contents (Optional)
   
@@ -34,7 +15,7 @@ function generateMarkdown(data) {
   
   ## Installation
   
-  ${data.installation}
+  undefined
    
   ## Usage
   
@@ -56,7 +37,7 @@ function generateMarkdown(data) {
   
   ## License
   
- ${renderLicenseBadge(data.license)}
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ---
   
   🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
@@ -78,6 +59,3 @@ function generateMarkdown(data) {
   ## Tests
   
   Go the extra mile and write tests for your application. Then provide examples on how to run them here.
-`};
-  //export function generateMarkdown
-  export default generateMarkdown;
