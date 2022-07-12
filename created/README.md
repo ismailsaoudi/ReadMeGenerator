@@ -1,8 +1,8 @@
-# 
+# readMe Generator
 
   ## Description
   
-   
+  use npm inquirer to create a readMe file 
   
   ## Table of Contents (Optional)
   

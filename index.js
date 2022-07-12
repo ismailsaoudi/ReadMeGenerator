@@ -61,6 +61,3 @@ inquirer.prompt([
        fs.writeFileSync("./created/README.md",generateMarkdown(data) )
     })
 
-  
-
-// Function call to initialize app
